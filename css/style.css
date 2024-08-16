@@ -1,0 +1,217 @@
+:root {
+    --primary-color: #fed001;
+    --bg-color-dark: #2a2a2a;
+    --bg-color-light: #fafafa;
+    --bg-color-dark2: #003464;
+}
+
+html {
+    /* 
+    font-weight: 400;
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    
+    atalho: */
+    font: 400 62.5% 'Inter', sans-serif;
+
+    scroll-behavior: smooth;
+    /*Para dar um scroll suave*/
+    scroll-padding-top: 12em;
+    /*Para dar a distância suficiente para que o header não fique por cima da section ao dar scroll*/
+
+}
+
+p,
+a {
+    font-size: 1.6rem;
+
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    border-radius: 0.4rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 1.6rem 4.6rem;
+    color: black;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #967a00;
+    outline: 0.1rem solid #fafafa;
+    outline-offset: -0.2rem;
+}
+
+.wrapperContainer-dark {
+    background-color: var(--bg-color-dark);
+    color: #fafafa;
+
+}
+
+.wrapperContainer-sticky {
+    position: sticky;
+    top: 0;
+}
+
+.wrapperContainer-light {
+    background-color: var(--bg-color-light);
+    padding-top: 1px;
+    /*para que a margin-top da classe courses_title não afaste o conteúdo para baixo */
+}
+
+.wrapperContainer-dark2 {
+    background-color: var(--bg-color-dark2);
+    color: #fafafa;
+}
+
+.container {
+    max-width: 127.6rem;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    padding: 2rem 0;
+}
+
+.header_nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.header_nav a {
+    color: inherit;
+    /* herda a cor do elemento acima (class wrapperContainer-dark) */
+
+    padding: 0.75em 1.15em;
+    border: .1rem solid;
+    text-decoration: none;
+}
+
+.header_nav a:hover {
+    background-color: black;
+}
+
+.wrapperContainer-hero {
+    background-image: linear-gradient(#fafafa, rgb(255, 255, 114));
+
+}
+
+.heroBanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+}
+
+.heroBanner_title {
+    margin-bottom: 4rem;
+    font-size: 4.8rem;
+}
+
+.courses {
+    text-align: center;
+}
+
+.courses_card {
+    text-align: left;
+    flex: 1;
+    /* 
+        atalho para :
+
+        flex-grow: 1;
+        flex-shrink: 1; (valor padrão)
+        flex-basis: 0%; (valor padrão)
+    */
+    height: 100%;
+
+    border: 2px solid gray;
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+
+.courses_card img {
+    display: block;
+    width: 100%;
+}
+
+.section_title {
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.section_btn {
+    margin: 5rem 0;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.courses_card_content {
+    padding: 1rem;
+}
+
+.courses_card_content .courses_card_title {
+    margin: 1rem 0;
+}
+
+.courses_card_content .courses_card_text {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    line-height: 1.5;
+    padding-top: 6rem;
+}
+
+.about .about_title {
+    margin: 4rem 0 3rem;
+}
+
+.map {
+    border-radius: 1rem;
+    outline: 2px solid gray;
+}
+
+.main-address {
+    color: #202020;
+    text-align: right;
+    margin: 3rem 0;
+    font: normal 400 1.8rem 'Inter', sans-serif;
+    line-height: 1.5;
+}
+
+footer {
+    font-size: 2rem;
+    text-align: center;
+    padding: 4rem;
+}
+
+footer a {
+    color: inherit;
+    font-size: inherit;
+}
